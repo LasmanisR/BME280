@@ -25,8 +25,8 @@ GPIO.setup(18, GPIO.OUT)
 GPIO.setup(27, GPIO.OUT)
 GPIO.setup(24, GPIO.OUT)
 
-while True:
 try:
+    while True:
          button_state = GPIO.input(button)
          if button_state == GPIO.LOW:
              GPIO.output(18,GPIO.HIGH)
